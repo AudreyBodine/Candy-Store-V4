@@ -46,6 +46,9 @@ public class MainActivity extends AppCompatActivity {
                 Intent updateIntent = new Intent( this, UpdateActivity.class );
                 this.startActivity(updateIntent);
                 return true;
+            case R.id.action_exit:
+                this.finish();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
